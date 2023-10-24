@@ -1,0 +1,86 @@
+<!-- page requirements:
+- add a new customer to database
+    - ask for all data from customer
+    - make sure customer doesn't already exist in database
+    - create account with in $5.00 credit -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Customers</title>
+        <link rel="stylesheet" href="customers-style.css"/>
+    </head>
+
+    <body>
+        <!-- Navigation Header -->
+        <div class="nav-container">
+            <div class="wrapper">
+                <nav>
+                    <!-- Restaurant Database -->
+                    <div class="restaurantdb">
+                        <a href="restaurant.html">Restaurant Database</a>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <ul class="nav-items">
+                        <li><a href = "orders.html">Orders</a></li>
+                        <li><a href = "customers.html">Customers</a></li>
+                        <li><a href = "employees.html" >Employees</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-container">
+            <div class="wrapper">
+                <div class="hero-image">
+                    <img src="images/customers.png" alt="">
+                </div>
+                <div class="hero-content">
+                    <!-- Text -->
+                    <div class="customers">
+                        Customers
+                    </div>
+
+                    <div class="question">
+                        Want to become one of our customers?<br>
+                        Join our dataase today and receive $5.00 in credit!
+                    </div>
+                
+                    <p class="information">Enter your information below:</p>
+
+                    <!-- Add customer data to database -->
+                    <?php
+                        // this processes the data submitted in the form!
+                        // make sure user doesn't leave any parts of the form blank
+                        // check if customer already exists using primary key, phone number
+                    ?>
+
+                    <!-- Form to get customer info -->
+                    <form method="post" action="">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name"><br>
+            
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name"><br>
+            
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address"><br>
+            
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number" name="phone_number"><br>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+            
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

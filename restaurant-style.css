@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Lora", sans-serif;
+    background-color: #F0EADD;
+}
+
+/* Nagivation Header */
+.nav-container {
+    background: #FFFFFF;
+    height: 100px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .restaurantdb {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #4B7963;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #4B7963;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Container */
+.header-container {
+    padding: 20px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.hero-image {
+    float: left;
+    margin-right: 60px;
+}
+
+.text {
+    width: 50%;
+    display: inline-block;
+}
+
+.welcome {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #365446;
+    margin-top: 30px;
+}
+
+.options {
+    font-family: 'Lora', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #73664C;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav-items li {
+    list-style: none;
+}
+
+.nav-items li a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #4B7963;
+    text-decoration: none;
+}
+

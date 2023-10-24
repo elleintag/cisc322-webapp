@@ -1,0 +1,78 @@
+<!-- page requirements:
+- user should be able to choose an employee + show their schedule
+    - all employee names should be displayed in a list for user to choose someone
+    - schedule shown should only show monday to friday (NOT SAT/SUN) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Employees</title>
+        <link rel="stylesheet" href="employees-style.css"/>
+    </head>
+    <body>
+        <!-- Navigation Header -->
+        <div class="nav-container">
+            <div class="wrapper">
+                <nav>
+                    <!-- Restaurant Database -->
+                    <div class="restaurantdb">
+                        <a href="restaurant.html">Restaurant Database</a>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <ul class="nav-items">
+                        <li><a href = "orders.html">Orders</a></li>
+                        <li><a href = "customers.html">Customers</a></li>
+                        <li><a href = "employees.html" >Employees</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-container">
+            <div class="wrapper">
+                <div class="hero-content">
+                    <!-- Text -->
+                    <div class="employees">
+                        Employees
+                    </div>
+
+                    <div class="employee-database">
+                        Our employee database
+                    </div>
+
+                    <!-- Table with all employees -->
+                    <?php
+                        // shows all employees
+                     ?>
+
+                    <!-- Information Text -->
+                     <p class="information">To learn more about an employee's schedule, select them in the form below:</p>
+                    
+                    <!-- Shows employee schedule based on database -->
+                     <?php
+                        // using the employee selected, show their schedule in table format
+                    ?>
+    
+                    <!-- Form to choose employee -->
+                    <form method="post" action="">
+                        <label for="employee">Choose an employee:</label>
+                        <select name="employee" id="employee">
+                        <!-- should list all employees as options here, doing this dynamically with php below -->
+    
+                        **look this over**
+                        <!-- <?php while ($row = $result->fetch_assoc()) { ?>
+                            <option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option>
+                        <?php } ?> -->
+    
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
